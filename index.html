@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>To-Do Manager</title>
+<style>body, html {
+  height: 100%;
+  font-family: Gaegu Bold;
+  margin: 0;
+  background-image: url("bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.bg-img {
+  background-image: url("bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+button {
+  background-color: #5c4033;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 340px;
+  font-size: 29px;
+  opacity:0.9;
+   padding: 10px 18px;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+button:hover {
+  opacity: 1;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #000000;
+}
+.container1 {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  opacity: 0.5%;
+  padding-top: 50px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+h1 {text-align: center;}
+</style>
+</head>
+<body>
+  
+        
+    <div class="center">
+    <a href="login.html"><button class="button" onclick="login.html">Log In</button></a>
+    <br>
+    <br>
+    <a href="signin.html"><button class="button" onclick="signin.html">Register</button></a><br>
+    </div>
+  
+</body>
+</html>
